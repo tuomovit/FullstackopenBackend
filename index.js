@@ -20,6 +20,9 @@ const bodyParser = require('body-parser')
 
 app.use(bodyParser.json())
 
+t = [{v:1}, {v:2}, {v:3}] 
+var vastaus = t.reduce((s, o) => s + v, 0)
+console.log(vastaus);
 
 let persons = [
   {
